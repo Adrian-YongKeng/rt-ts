@@ -1,7 +1,10 @@
 import "./App.css";
 import Greet from "./components/Greet";
+import Heading from "./components/Heading";
+import Oscar from "./components/Oscar";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
+import Status from "./components/Status";
 
 const App = () => {
   const personName = {
@@ -26,6 +29,14 @@ const App = () => {
 
   return (
     <div className="App">
+      <Status status="error" />
+
+      <Heading>Placeholder text</Heading>
+
+      <Oscar>
+        <Heading>component to children props!</Heading>
+      </Oscar>
+
       <Greet name="Adrian" messageCount={22} isLoggedIn={false} />
 
       <Person name={personName} />
