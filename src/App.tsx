@@ -7,6 +7,7 @@ import Input from "./components/Input";
 import Oscar from "./components/Oscar";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
+import { Counter } from "./components/state/Counter";
 import Status from "./components/Status";
 
 const App = () => {
@@ -55,6 +56,8 @@ const App = () => {
       <Person name={personName} />
 
       <PersonList names={nameList} />
+
+      <Counter />
     </div>
   );
 };
