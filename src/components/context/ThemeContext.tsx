@@ -7,9 +7,8 @@ type ThemeContextProviderProps = {
 
 export const ThemeContext = createContext(theme);
 
-export const ThemeContextProvider = ({
-  children,
-}: ThemeContextProviderProps) => {
+//prettier-ignore
+export const ThemeContextProvider = ({children}: ThemeContextProviderProps) => {
   return (
     <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
   );
