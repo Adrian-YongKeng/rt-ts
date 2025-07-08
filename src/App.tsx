@@ -1,5 +1,6 @@
 import "./App.css";
 import Button from "./components/Button";
+import { Counter } from "./components/class/Counter";
 import Container from "./components/Container";
 import Box from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
@@ -13,7 +14,7 @@ import Person from "./components/Person";
 import PersonList from "./components/PersonList";
 import DomRef from "./components/ref/DomRef";
 import MutableRef from "./components/ref/MutableRef";
-import { Counter } from "./components/state/Counter";
+// import { Counter } from "./components/state/Counter";
 import Status from "./components/Status";
 
 const App = () => {
@@ -39,6 +40,8 @@ const App = () => {
 
   return (
     <div className="App">
+      <Counter message="The count value is" />
+
       <MutableRef />
       <DomRef />
 
@@ -74,7 +77,7 @@ const App = () => {
 
       <PersonList names={nameList} />
 
-      <Counter />
+      {/* <Counter /> */}
     </div>
   );
 };
