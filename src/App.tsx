@@ -8,6 +8,7 @@ import Box from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
 import { User } from "./components/context/User";
 import { UserContextProvider } from "./components/context/UserContext";
+import List from "./components/generics/List";
 import Greet from "./components/Greet";
 import Heading from "./components/Heading";
 import Input from "./components/Input";
@@ -42,6 +43,29 @@ const App = () => {
 
   return (
     <div className="App">
+      {/* <List
+        items={["Batman", "Superman", "Wonder Woman"]}
+        onClick={(item) => console.log(item)}
+      />
+      <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
+      <List
+        items={[
+          {
+            id: 1,
+            name: "Bruce1 Lee1",
+          },
+          {
+            id: 2,
+            name: "Bruce2 Lee2",
+          },
+          {
+            id: 3,
+            name: "Bruce3Lee3",
+          },
+        ]}
+        onClick={(item) => console.log(item)}
+      />
+
       {/* Component Props */}
       <Private isLoggedIn={true} component={Profile} />
 
