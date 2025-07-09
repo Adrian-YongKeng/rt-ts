@@ -43,6 +43,7 @@ const App = () => {
 
   return (
     <div className="App">
+      {/* Generic props */}
       {/* <List
         items={["Batman", "Superman", "Wonder Woman"]}
         onClick={(item) => console.log(item)}
