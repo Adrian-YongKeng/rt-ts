@@ -19,6 +19,7 @@ import DomRef from "./components/ref/DomRef";
 import MutableRef from "./components/ref/MutableRef";
 // import { Counter } from "./components/state/Counter";
 import Status from "./components/Status";
+import RandomNumber from "./components/restriction/RandomNumber";
 
 const App = () => {
   const personName = {
@@ -43,6 +44,9 @@ const App = () => {
 
   return (
     <div className="App">
+      {/* Restriction Props */}
+      <RandomNumber value={10} isPositive />
+
       {/* Generic props */}
       {/* <List
         items={["Batman", "Superman", "Wonder Woman"]}
