@@ -20,6 +20,7 @@ import MutableRef from "./components/ref/MutableRef";
 // import { Counter } from "./components/state/Counter";
 import Status from "./components/Status";
 import RandomNumber from "./components/restriction/RandomNumber";
+import Toast from "./components/templateliterals/Toast";
 
 const App = () => {
   const personName = {
@@ -44,6 +45,9 @@ const App = () => {
 
   return (
     <div className="App">
+      {/* Template Literals and Exclude */}
+      <Toast position="center" />
+
       {/* Restriction Props */}
       <RandomNumber value={10} isPositive />
 
