@@ -42,6 +42,7 @@ const App = () => {
 
   return (
     <div className="App">
+      {/* Component Props */}
       <Private isLoggedIn={true} component={Profile} />
 
       <Counter message="The count value is" />

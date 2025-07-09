@@ -4,6 +4,7 @@ import { ProfileProps } from "./Profile";
 
 type PrivateProps = {
   isLoggedIn: boolean;
+  //component itself accepts props specify the prop types in angle bracket
   component: React.ComponentType<ProfileProps>;
 };
 
