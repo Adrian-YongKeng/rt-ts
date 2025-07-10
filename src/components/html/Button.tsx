@@ -2,7 +2,8 @@ import React from "react";
 
 type ButtonProps = {
   variant: "primary" | "secondary";
-  children: string;
+  children: string; // expect children to be a string
+  // } & React.ComponentProps<"button">;
 } & Omit<React.ComponentProps<"button">, "children">;
 
 const CustomButton = ({ variant, children, ...rest }: ButtonProps) => {
