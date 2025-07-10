@@ -21,6 +21,7 @@ import MutableRef from "./components/ref/MutableRef";
 import Status from "./components/Status";
 import RandomNumber from "./components/restriction/RandomNumber";
 import Toast from "./components/templateliterals/Toast";
+import CustomButton from "./components/html/Button";
 
 const App = () => {
   const personName = {
@@ -45,6 +46,10 @@ const App = () => {
 
   return (
     <div className="App">
+      <CustomButton variant="primary" onClick={() => console.log("clicked")}>
+        Primary Button
+      </CustomButton>
+
       {/* Template Literals and Exclude */}
       <Toast position="center" />
 
